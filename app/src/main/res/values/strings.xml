@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cute Pets Example</string>
+    <string name="gender">What is your gender?</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="other">Other</string>
+    <string name="age">What is your age group?</string>
+    <string name="young">24 years or younger</string>
+    <string name="middle">25-54 years old</string>
+    <string name="old">55 years or older</string>
+    <string name="pets">Which pets do you own?</string>
+    <string name="cats">Cat(s)</string>
+    <string name="dogs">Dog(s)</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
