@@ -3,6 +3,7 @@ package com.example.cutepets;
 import android.app.Application;
 
 import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 
 /**
@@ -48,7 +49,7 @@ public class MyApp extends Application {
         analytics = GoogleAnalytics.getInstance(this);
 
         // TODO: Replace the tracker-id with your app one from https://www.google.com/analytics/web/
-        tracker = analytics.newTracker("UA-54478999-1");
+        tracker = analytics.newTracker("UA-54478999-3");
 
         // Provide unhandled exceptions reports. Do that first after creating the tracker
         tracker.enableExceptionReporting(true);
@@ -59,5 +60,7 @@ public class MyApp extends Application {
 
         // Enable automatic activity tracking for your app
         tracker.enableAutoActivityTracking(true);
+
+        tracker.send(new HitBuilders.ScreenViewBuilder().setCustomDimension(1, null).build());
     }
 }

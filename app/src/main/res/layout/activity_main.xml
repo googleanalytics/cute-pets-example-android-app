@@ -14,7 +14,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:textSize="@dimen/abc_text_size_title_material"
         android:id="@+id/gendertext" />
 
@@ -23,7 +22,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/gendertext"
-        android:layout_centerHorizontal="true"
         android:id="@+id/gendergroup">
 
         <RadioButton
@@ -55,7 +53,6 @@
         android:textSize="@dimen/abc_text_size_title_material"
         android:id="@+id/agetext"
         android:layout_below="@+id/gendergroup"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="15dip" />
 
 
@@ -64,7 +61,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/agetext"
-        android:layout_centerHorizontal="true"
         android:id="@+id/agegroup">
 
         <RadioButton
@@ -96,15 +92,14 @@
         android:textSize="@dimen/abc_text_size_title_material"
         android:id="@+id/textView"
         android:layout_marginTop="15dip"
-        android:layout_below="@+id/agegroup"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/agegroup"/>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true">
+        android:id="@+id/petsview">
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -120,6 +115,16 @@
             android:id="@+id/dogs"
             android:checked="false" />
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/begin"
+        android:id="@+id/button"
+        android:layout_alignBottom="@+id/petsview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="begin"/>
 
 
 </RelativeLayout>

@@ -13,4 +13,21 @@
     <string name="dogs">Dog(s)</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="tracking_id">UA-54478999-3</string>
+    <string name="begin">Begin</string>
+    <string name="title_activity_instructions">Instructions</string>
+
+    <string name="gotit">Got it</string>
+
+    <string name="instructions">You will be shown a series of image pairs comparing two pets.
+    \n\n
+    Tap on the pet you think is cuter.</string>
+    <string name="title_activity_compare_pets">ComparePets</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_results">Results</string>
+
+    <string name="resultsText">Thank you for your answers!\n\n
+    Here is your top pet.</string>
 </resources>
