@@ -1,15 +1,14 @@
 package com.example.cutepets;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.google.android.gms.analytics.HitBuilders;
 
-
-public class ComparePets extends ActionBarActivity {
+public class ComparePets extends AppCompatActivity {
     static int[] images = {
             R.drawable.cat_1,
             R.drawable.dog_1,
@@ -67,5 +66,4 @@ public class ComparePets extends ActionBarActivity {
         }
         startActivity(intent);
     }
-
 }

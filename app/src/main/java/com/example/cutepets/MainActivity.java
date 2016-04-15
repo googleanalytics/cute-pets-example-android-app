@@ -2,7 +2,7 @@ package com.example.cutepets;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
@@ -13,14 +13,13 @@ import android.widget.RadioButton;
  * Google Analytics code is added to onOptionsItemSelected handler to log an event when settings are
  * selected from the menu.
  */
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
 
     public void begin(View view) {
         // Set custom dimensions to track gender, age group, and pets owned for the current user.
