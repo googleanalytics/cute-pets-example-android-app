@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import com.google.android.gms.analytics.HitBuilders;
 
 public class ComparePets extends AppCompatActivity {
-    static int[] images = {
+    final static int[] images = {
             R.drawable.cat_1,
             R.drawable.dog_1,
             R.drawable.cat_2,
@@ -38,8 +38,15 @@ public class ComparePets extends AppCompatActivity {
             index = extras.getInt("petIndex", 1);
         }
 
-        ((ImageView) findViewById(R.id.imageView1)).setImageResource(images[cutest]);
-        ((ImageView) findViewById(R.id.imageView2)).setImageResource(images[index]);
+        ImageView ivCutest = (ImageView) findViewById(R.id.imageView1);
+        if (ivCutest != null) {
+            ivCutest.setImageResource(images[cutest]);
+        }
+
+        ImageView ivCandidate = (ImageView) findViewById(R.id.imageView2);
+        if (ivCandidate != null) {
+            ivCandidate.setImageResource(images[index]);
+        }
     }
 
     public void select(View view) {

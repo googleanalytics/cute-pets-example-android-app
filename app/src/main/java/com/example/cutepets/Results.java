@@ -11,6 +11,9 @@ public class Results extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
         int cutest = getIntent().getExtras().getInt("cutestPet");
-        ((ImageView) findViewById(R.id.imageView)).setImageResource(ComparePets.images[cutest]);
+        ImageView imageView = (ImageView) findViewById(R.id.imageView);
+        if (imageView != null) {
+            imageView.setImageResource(ComparePets.images[cutest]);
+        }
     }
 }

@@ -14,7 +14,8 @@
         android:id="@+id/imageView1"
         android:src="@drawable/cat_1"
         android:layout_weight="1"
-        android:onClick="select"/>
+        android:onClick="select"
+        android:contentDescription="@string/image_description_cutest_pet" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -22,5 +23,6 @@
         android:id="@+id/imageView2"
         android:src="@drawable/dog_1"
         android:layout_weight="1"
-        android:onClick="select"/>
+        android:onClick="select"
+        android:contentDescription="@string/image_description_candidate_pet" />
 </LinearLayout>

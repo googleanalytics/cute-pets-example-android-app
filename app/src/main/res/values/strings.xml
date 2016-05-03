@@ -24,4 +24,8 @@
         Thank you for your answers!\n
         \n
         Here is your top pet.</string>
+
+    <string name="image_description_top_pet">Top pet image</string>
+    <string name="image_description_cutest_pet">Cutest pet picture</string>
+    <string name="image_description_candidate_pet">Candidate pet picture</string>
 </resources>
