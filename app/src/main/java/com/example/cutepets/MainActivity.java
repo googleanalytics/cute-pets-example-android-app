@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         startActivity(new Intent(this, Instructions.class));
+        finish();
     }
 
     @Nullable

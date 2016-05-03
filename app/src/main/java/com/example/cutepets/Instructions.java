@@ -15,5 +15,6 @@ public class Instructions extends AppCompatActivity {
 
     public void gotIt(View view) {
         startActivity(new Intent(this, ComparePets.class));
+        finish();
     }
 }

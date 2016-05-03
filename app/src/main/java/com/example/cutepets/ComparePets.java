@@ -72,5 +72,6 @@ public class ComparePets extends AppCompatActivity {
             intent.setClass(this, Results.class);
         }
         startActivity(intent);
+        finish();
     }
 }
