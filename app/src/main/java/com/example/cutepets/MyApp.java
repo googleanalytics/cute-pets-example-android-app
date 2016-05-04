@@ -30,7 +30,7 @@ public class MyApp extends Application {
      * set android:name="&lt;this.class.name&gt;" attribute on your application element in
      * AndroidManifest.xml or you are not setting this.analytics field in onCreate method override.
      */
-    @SuppressWarnings("unused")
+    @SuppressWarnings("unused") // Method is unused in codebase; kept here for reference.
     public static GoogleAnalytics analytics() {
         return analytics;
     }
