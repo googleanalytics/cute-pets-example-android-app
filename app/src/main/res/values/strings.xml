@@ -6,28 +6,26 @@
     <string name="other">Other</string>
     <string name="age">What is your age group?</string>
     <string name="young">24 years or younger</string>
-    <string name="middle">25-54 years old</string>
+    <string name="middle">25 to 54 years old</string>
     <string name="old">55 years or older</string>
     <string name="pets">Which pets do you own?</string>
     <string name="cats">Cat(s)</string>
     <string name="dogs">Dog(s)</string>
-
-    <string name="action_settings">Settings</string>
-
-    <string name="tracking_id">UA-54478999-3</string>
     <string name="begin">Begin</string>
     <string name="title_activity_instructions">Instructions</string>
-
     <string name="gotit">Got it</string>
-
-    <string name="instructions">You will be shown a series of image pairs comparing two pets.
-    \n\n
-    Tap on the pet you think is cuter.</string>
+    <string name="instructions">
+        You will be shown a series of image pairs comparing two pets.\n
+        \n
+        Tap on the pet you think is cuter.</string>
     <string name="title_activity_compare_pets">ComparePets</string>
-
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_results">Results</string>
+    <string name="resultsText">
+        Thank you for your answers!\n
+        \n
+        Here is your top pet.</string>
 
-    <string name="resultsText">Thank you for your answers!\n\n
-    Here is your top pet.</string>
+    <string name="image_description_top_pet">Top pet image</string>
+    <string name="image_description_cutest_pet">Cutest pet picture</string>
+    <string name="image_description_candidate_pet">Candidate pet picture</string>
 </resources>

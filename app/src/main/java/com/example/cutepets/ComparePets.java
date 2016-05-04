@@ -1,16 +1,15 @@
 package com.example.cutepets;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.google.android.gms.analytics.HitBuilders;
 
-
-public class ComparePets extends ActionBarActivity {
-    static int[] images = {
+public class ComparePets extends AppCompatActivity {
+    final static int[] images = {
             R.drawable.cat_1,
             R.drawable.dog_1,
             R.drawable.cat_2,
@@ -39,8 +38,15 @@ public class ComparePets extends ActionBarActivity {
             index = extras.getInt("petIndex", 1);
         }
 
-        ((ImageView) findViewById(R.id.imageView1)).setImageResource(images[cutest]);
-        ((ImageView) findViewById(R.id.imageView2)).setImageResource(images[index]);
+        ImageView ivCutest = (ImageView) findViewById(R.id.imageView1);
+        if (ivCutest != null) {
+            ivCutest.setImageResource(images[cutest]);
+        }
+
+        ImageView ivCandidate = (ImageView) findViewById(R.id.imageView2);
+        if (ivCandidate != null) {
+            ivCandidate.setImageResource(images[index]);
+        }
     }
 
     public void select(View view) {
@@ -66,6 +72,6 @@ public class ComparePets extends ActionBarActivity {
             intent.setClass(this, Results.class);
         }
         startActivity(intent);
+        finish();
     }
-
 }

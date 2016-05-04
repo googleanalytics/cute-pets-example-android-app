@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:textSize="@dimen/abc_text_size_title_material"
+        android:textSize="@dimen/text_size_title"
         android:id="@+id/gendertext" />
 
     <RadioGroup
@@ -50,7 +50,7 @@
         android:text="@string/age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/abc_text_size_title_material"
+        android:textSize="@dimen/text_size_title"
         android:id="@+id/agetext"
         android:layout_below="@+id/gendergroup"
         android:layout_marginTop="15dip" />
@@ -89,7 +89,7 @@
         android:text="@string/pets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/abc_text_size_title_material"
+        android:textSize="@dimen/text_size_title"
         android:id="@+id/textView"
         android:layout_marginTop="15dip"
         android:layout_below="@+id/agegroup"/>
@@ -121,10 +121,8 @@
         android:layout_height="wrap_content"
         android:text="@string/begin"
         android:id="@+id/button"
-        android:layout_alignBottom="@+id/petsview"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
         android:onClick="begin"/>
-
 
 </RelativeLayout>
