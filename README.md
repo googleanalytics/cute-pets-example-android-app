@@ -1,3 +1,5 @@
+# No longer actively maintained
+
 Cute Pets Example App
 =====================
 
